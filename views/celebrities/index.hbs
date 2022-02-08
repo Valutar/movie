@@ -1,0 +1,12 @@
+<h2>This the Homepage of this project </h2>
+<h1>All the Celebrities</h1>
+{{#each celebrities}}
+	<div>
+		<a href="/celebrities/{{_id}}">{{name}}</a>
+	</div>
+	<form action="celebrities/{{_id}}/delete" method="POST">
+		 <button type='submit'>Delete </button>
+	</form>
+
+{{/each}}
+
