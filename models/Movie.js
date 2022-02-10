@@ -8,7 +8,7 @@ const movieSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Celebrity'
     }]
-})
+});
 
 const Movie = mongoose.model('Movie', movieSchema);
 module.exports = Movie;

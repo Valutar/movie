@@ -30,18 +30,6 @@ router.get('/celebrities/:id', (req, res, next) => {
 		.catch(err => next(err))
 })
 
-// router.post('/celebrities/:id/delete', (req, res, next) => {
-// 	const { name, occupation, catchPhrase} = req.body
-// 	Celebrity.findByIdAndRemove(req.params.id, {
-// 		name,
-// 		occupation,
-// 		catchPhrase,
-// 	}, { new: true })
-// 		.then(deleteCelebrity => {
-// 			console.log(deleteCelebrity)
-// 			res.redirect(`/celebrities/${deleteCelebrity._id}`)
-// 		})
-// });
 
 router.post('/celebrities/:id/delete', (req, res, next) => {
 	const id = req.params.id
